@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
+IS_LOCAL_ENV = os.environ.has_key('IS_LOCAL_ENV')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -47,32 +47,36 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'core.urls'
+ROOT_URLCONF = 'urls'
 
-WSGI_APPLICATION = 'core.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "geezer",
-        "USER": "tomas",
-        "PASSWORD": "11",
-        "HOST": "",
-        "PORT": "",
+if IS_LOCAL_ENV:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "geezer",
+            "USER": "tomas",
+            "PASSWORD": "11",
+            "HOST": "",
+            "PORT": "",
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "d46jpkkf39otll",
+            "USER": "pxwbibmwrdestv",
+            "PASSWORD": "Wgwpw_LUEAvC4QOuGiSqcMfAB5",
+            "HOST": "ec2-54-225-101-64.compute-1.amazonaws.com",
+            "PORT": "5432",
+            }
+    }
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
