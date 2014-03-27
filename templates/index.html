@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Test</title>
+
+<!-- <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/base.css"> -->
+<link rel="stylesheet" href="http://themedemo.indonez.com/Cygnus/css/base.css">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/framework.css">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/style.css">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/media.css">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/revolution-media.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/revolution.css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/my.css">
+
+<!-- jQuery.js above 1.7  -->
+
+<link rel="icon" type="image/png" href="http://www.oftaldent.pl/gfx/slider/images/sitelogo.png">
+
+<!-- commented, remove this line to use IE & iOS favicons -->
+<link rel="shortcut icon" href="http://www.oftaldent.pl/gfx/slider/images/favicon.ico">
+
+<!-- get jQuery from the google apis -->
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui.js"></script>
+
+ <!-- jQuery KenBurn Slider  -->
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.themepunch.revolution.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+//Slideshow
+
+    $('.banner').revolution({
+        delay:9000,
+        startwidth:1090,
+        startheight:570,
+        navigationType:"none",				    // bullet, thumb, none
+        navigationArrows:"solo",				// nexttobullets, solo (old name verticalcentered), none
+        navigationStyle:"navbar",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+        navigationHAlign:"center",				// Vertical Align top,center,bottom
+        navigationVAlign:"bottom",				// Horizontal Align left,center,right
+        navigationHOffset:0,
+        navigationVOffset:150,
+        soloArrowLeftHalign:"left",
+        soloArrowLeftValign:"center",
+        soloArrowLeftHOffset:20,
+        soloArrowLeftVOffset:-128,
+        soloArrowRightHalign:"right",
+        soloArrowRightValign:"center",
+        soloArrowRightHOffset:20,
+        soloArrowRightVOffset:-128,
+        touchenabled:"on",						// Enable Swipe Function : on/off
+        onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+        stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+        stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+        hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+        hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+        hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+        shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+        // fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+        fullWidth:"on",                         // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+    });
+
+});
+</script>
+
+</head>
+<body data-twttr-rendered="true">
+	<!-- header start here -->
+	<header>
+    
+    	<!-- top info start here -->
+    	<div id="top-info">
+        	<div class="row">
+            	<div class="twelve columns">
+                	<!-- phone and email info start here -->
+                    <div id="top-phonemail">
+                        <p>Phone : (621) 555 6789  &nbsp;  |  &nbsp;  Mail : hello@cynus.net</p>
+                    </div>
+                    <!-- phone and email info end here -->
+                    
+                    <!-- top socials start here -->
+                    <div id="top-socials">
+                        <ul class="socials-list">
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/facebook.png" alt="" class="retina"></a></li>
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/twitter.png" alt="" class="retina"></a></li>
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/google+.png" alt="" class="retina"></a></li>
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/dribbble.png" alt="" class="retina"></a></li>
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/vimeo.png" alt="" class="retina"></a></li>
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/linkedin.png" alt="" class="retina"></a></li>
+                            <li><a href="#"><img src="{{STATIC_URL}}images/content/rss.png" alt="" class="retina"></a></li>
+                        </ul>
+                    </div>
+                    <!-- top socials end here -->
+            	</div>
+            </div>
+        </div>
+        <!-- top info end here -->
+        
+        <!-- mainmenu wrapper start here -->
+        <div id="mainmenu-wrapper">
+            <div class="row">
+                <div class="twelve columns">
+                
+                	<!-- logo start here -->
+                    <div id="logo">
+                    	<a href="index.html"><img src="{{STATIC_URL}}images/content/logo.png" alt="main-logo" class="retina"></a>
+                    </div>                    
+                    <!-- logo end here -->
+                    
+                    <!-- navigation start here -->
+                    <nav id="mainmenu">
+                        <ul id="menu" class="sf-js-enabled l_tinynav1">
+                            <li class="dropdown selected"><a href="index.html">Home</a>
+                                <ul style="visibility: hidden; display: none;"> 
+                                    <li><a href="index-layout2.html"><span>-</span> home layout 2</a></li>
+                                    <li><a href="index-layout3.html"><span>-</span> home layout 3</a></li>
+                                    <li><a href="index-layout4.html"><span>-</span> home layout 4</a></li>
+                                    <li><a href="index-layout5.html"><span>-</span> home layout 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li class="dropdown"><a href="#">Portfolio</a>
+                                <ul style="visibility: hidden; display: none;"> 
+                                    <li><a href="portfolio-2col.html"><span>-</span> portfolio 2 column</a></li>
+                                    <li><a href="portfolio-3col.html"><span>-</span> portfolio 3 column</a></li>
+                                    <li><a href="portfolio-4col.html"><span>-</span> portfolio 4 column</a>
+                                        <ul style="display: none; visibility: hidden;"> 
+                                            <li><a href="#"><span>-</span> dropdown level 2</a></li>
+                                            <li><a href="#"><span>-</span> dropdown level 2</a></li>
+                                            <li><a href="#"><span>-</span> dropdown level 2</a>
+                                                <ul style="display: none; visibility: hidden;"> 
+                                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                                    <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Blog</a>
+                                <ul style="visibility: hidden; display: none;"> 
+                                    <li><a href="blog-right-sidebar.html"><span>-</span> blog right sidebar</a></li>
+                                    <li><a href="blog-left-sidebar.html"><span>-</span> blog left sidebar</a></li>
+                                    <li><a href="single-right-sidebar.html"><span>-</span> single right sidebar</a></li> 
+                                    <li><a href="single-left-sidebar.html"><span>-</span> single left sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="dropdown"><a href="#">Pages</a>
+                                <ul style="display: none; visibility: hidden;"> 
+                                    <li><a href="column.html"><span>-</span> column page</a></li>
+                                    <li><a href="tables.html"><span>-</span> table page</a></li>
+                                    <li><a href="button-list.html"><span>-</span> button &amp; list page</a></li>
+                                    <li><a href="icons.html"><span>-</span> glyphicons page</a></li>
+                                    <li><a href="typhography.html"><span>-</span> typhography page</a></li>
+                                    <li><a href="testimonials.html"><span>-</span> testimonials page</a></li>  
+                                    <li><a href="pricing.html"><span>-</span> pricing page</a></li>
+                                    <li><a href="faq.html"><span>-</span> faq page</a></li>
+                                    <li><a href="team.html"><span>-</span> team page</a></li>
+                                    <li><a href="services-layout2.html"><span>-</span> services layout alt</a></li>
+                                    <li><a href="contact-layout2.html"><span>-</span> contact layout alt</a></li>
+                                    <li><a href="sitemap.html"><span>-</span> sitemap page</a></li>
+                                    <li><a href="fullwidth.html"><span>-</span> fullwidth page</a></li>
+                                    <li><a href="404.html"><span>-</span> 404 page</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <select class="tinynav tinynav1">
+                            <option value="index.html" selected="selected">Home</option>
+                            <option value="index-layout2.html">- home layout 2</option>
+                            <option value="index-layout3.html">- home layout 3</option>
+                            <option value="index-layout4.html">- home layout 4</option>
+                            <option value="index-layout5.html">- home layout 5</option>
+                            <option value="about.html">About</option>
+                            <option value="services.html">Services</option>
+                            <option value="#">Portfolio</option>
+                            <option value="portfolio-2col.html">- portfolio 2 column</option>
+                            <option value="portfolio-3col.html">- portfolio 3 column</option>
+                            <option value="portfolio-4col.html">- portfolio 4 column</option>
+                            <option value="#">- dropdown level 2</option>
+                            <option value="#">- dropdown level 2</option>
+                            <option value="#">- dropdown level 2</option>
+                            <option value="#">- dropdown level 3</option>
+                            <option value="#">- dropdown level 3</option>
+                            <option value="#">- dropdown level 3</option>
+                            <option value="#">Blog</option>
+                            <option value="blog-right-sidebar.html">- blog right sidebar</option>
+                            <option value="blog-left-sidebar.html">- blog left sidebar</option>
+                            <option value="single-right-sidebar.html">- single right sidebar</option>
+                            <option value="single-left-sidebar.html">- single left sidebar</option>
+                            <option value="contact.html">Contact</option>
+                            <option value="#">Pages</option>
+                            <option value="column.html">- column page</option>
+                            <option value="tables.html">- table page</option>
+                            <option value="button-list.html">- button &amp; list page</option>
+                            <option value="icons.html">- glyphicons page</option>
+                            <option value="typhography.html">- typhography page</option>
+                            <option value="testimonials.html">- testimonials page</option>
+                            <option value="pricing.html">- pricing page</option>
+                            <option value="faq.html">- faq page</option>
+                            <option value="team.html">- team page</option>
+                            <option value="services-layout2.html">- services layout alt</option>
+                            <option value="contact-layout2.html">- contact layout alt</option>
+                            <option value="sitemap.html">- sitemap page</option>
+                            <option value="fullwidth.html">- fullwidth page</option>
+                            <option value="404.html">- 404 page</option>
+                        </select>
+                    </nav>
+                    <!-- navigation end here -->
+                    
+                </div>
+            </div>
+        </div>
+		<!-- mainmenu wrapper end here -->
+        
+        <div id="slogan-wrapper">
+        	<div class="row">
+            	<div class="twelve columns">
+                	<h2><span class="title-green">Powerful &amp; minimalist</span> template with five home options.<br>It's fully responsive design ready to look stunning on any device.</h2>
+                </div>
+            </div>
+        </div>
+                
+    </header>
+    <!-- header end here -->
+
+    <!-- slideshow start here -->
+    <section id="slideshow-container">
+    	<div class="banner revslider-initialised tp-simpleresponsive">
+            <ul>
+                <!-- slide 1 -->
+                <li data-transition="fade">
+                    <div class="slotholder">
+                        <img src="{{STATIC_URL}}images/content/transparent.png" alt="" class="defaultimg" >
+                    </div>
+                    <div class="caption lfb video_box tp-caption start" data-x="186" data-y="79" data-speed="900" data-start="500" data-easing="easeOutBack">
+
+                        <video width="486" height="330" controls="controls" style="margin: 5px 0 0 115px;">
+                            <source src="http://videos.videopress.com/jDB1CTfb/introducing-instascribehd_dvd.mp4" type="video/mp4">
+                            <object type="application/x-shockwave-flash" data="http://s0.videopress.com/player.swf" >
+                                <param name="wmode" value="direct">
+                                <param name="quality" value="autohigh">
+                                <param name="seamlesstabbing" value="true">
+                                <param name="allowfullscreen" value="true">
+                                <param name="allowscriptaccess" value="always">
+                                <param name="overstretch" value="true">
+                                <param name="flashvars" value="guid=jDB1CTfb&amp;autoPlay=false&amp;isDynamicSeeking=false&amp;hd=undefined">
+                            </object>
+                        </video>
+                    </div>
+                </li>
+                <!-- slide 2 -->
+                <li data-transition="fade">
+                    <div class="slotholder"><img src="{{STATIC_URL}}images/content/transparent.png" alt="" class="defaultimg" ></div>
+                    <div class="caption lft tp-caption start" data-x="23" data-y="156" data-speed="1200" data-start="550" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img3.png" alt=""></div>
+                    <div class="caption lft tp-caption start" data-x="299" data-y="115" data-speed="1200" data-start="950" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img4.png" alt=""></div>
+                    <div class="caption lft tp-caption start" data-x="567" data-y="193" data-speed="1200" data-start="1350" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img5.png" alt=""></div>
+                    <div class="caption lft tp-caption start" data-x="824" data-y="119" data-speed="1200" data-start="1750" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img6.png" alt=""></div>
+                    <div class="caption lfb heading_grey heading-media10 tp-caption start" data-x="267" data-y="435" data-speed="900" data-start="850" data-easing="easeOutBack"><h2>What do you waiting for?? let's join with them</h2></div>
+                </li>
+
+                <!-- slide 3 -->
+                <li data-transition="fade">
+                    <div class="slotholder">
+                        <img src="{{STATIC_URL}}images/content/transparent.png" alt="" class="defaultimg">
+                    </div>
+                    <div class="caption lft img-media tp-caption start" data-x="10" data-y="71" data-speed="1200" data-start="550" data-easing="easeOutExpo">
+                        <img src="{{STATIC_URL}}images/content/sld_img7.png" alt="">
+                    </div>
+                    <div class="caption lfb img-media2 tp-caption start" data-x="314" data-y="221" data-speed="1200" data-start="950" data-easing="easeOutExpo">
+                        <img src="{{STATIC_URL}}images/content/sld_img8.png" alt="">
+                    </div>
+                    <div class="caption lfb heading_grey heading-media tp-caption start" data-x="635" data-y="134" data-speed="900" data-start="850" data-easing="easeOutBack">
+                        <h2>Yaay....Cygnus is responsive too.</h2>
+                    </div>
+                    <div class="caption lfb text_slide tp-caption start" data-x="635" data-y="221" data-speed="900" data-start="850" data-easing="easeOutBack">
+                        <p class="text_slide1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>accusantium doloremque laudantium, totam rem aperiam, eaque<br>ipsa quae ab illo inventore veritatis et quasi architecto beatae<br>vitae dicta sunt explicabo molestiae consequatur.</p>
+                    </div>
+                    <div class="caption lfb btn-media tp-caption start" data-x="635" data-y="356" data-speed="900" data-start="850" data-easing="easeOutBack"><a class="button large green">Buy now on Themeforest »</a></div>
+                </li>
+    
+                <!-- slide 4 -->
+                <li data-transition="fade">
+                    <div class="slotholder">
+                        <img src="{{STATIC_URL}}images/content/transparent.png" alt="" class="defaultimg">
+                    </div>
+                    <div class="caption lfb tp-caption start" data-x="492" data-y="22" data-speed="1200" data-start="700" data-easing="easeOutExpo">
+                        <img src="{{STATIC_URL}}images/content/sld_img2.png" alt="">
+                    </div>
+                    <div class="caption lfb tp-caption start" data-x="518" data-y="70" data-speed="1200" data-start="400" data-easing="easeOutExpo" >
+                        <img src="{{STATIC_URL}}images/content/sld_img1.png" alt="" class="fixed-img">
+                    </div>
+                    <div class="caption lfb heading_grey tp-caption start" data-x="32" data-y="248" data-speed="900" data-start="400" data-easing="easeOutBack"><h1>Minimalist but it's Awesome</h1></div>
+                </li>
+    
+                <!-- slide 5 -->
+                <li data-transition="fade">
+                    <div class="slotholder">
+                        <img src="{{STATIC_URL}}images/content/transparent.png" alt="" class="defaultimg">
+                    </div>
+                    <div class="caption lfb tp-caption start" data-x="401" data-y="157" data-speed="1200" data-start="1150" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img12.png" alt=""></div>
+                    <div class="caption lfb tp-caption start" data-x="63" data-y="81" data-speed="1200" data-start="850" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img10.png" alt=""></div>
+                    <div class="caption lfb tp-caption start" data-x="9" data-y="101" data-speed="1200" data-start="550" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img9.png" alt=""></div>
+                    <div class="caption lfb tp-caption start" data-x="725" data-y="170" data-speed="1200" data-start="1050" data-easing="easeOutExpo"><img src="{{STATIC_URL}}images/content/sld_img11.png" alt=""></div>
+                </li>
+    
+            </ul>
+            <div class="tp-bannertimer tp-bottom" ></div>
+        <div class="tp-loader" style="display: none;"></div></div>
+        
+        <div id="slideshow-content">
+        	<div class="row">
+            	<div class="four columns">
+                	<div class="circle-icon img-left">
+                        <span aria-hidden="true" class="icon-curlybrace-2"></span>
+                    </div>
+                
+                	<h3>Semantic</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed dore eiusmod tempor incididunt ut labore etman dolore magna aliqua nimad minim veniam pulsar adiya</p>
+                </div>
+                
+                <div class="four columns">
+                	<div class="circle-icon img-left">
+                        <span aria-hidden="true" class="icon-settings-2"></span>
+                    </div>
+                
+                	<h3>Accessible</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed dore eiusmod tempor incididunt ut labore etman dolore magna aliqua nimad minim veniam pulsar adiya</p>
+                </div>
+                
+                <div class="four columns">
+                	<div class="circle-icon img-left">
+                        <span aria-hidden="true" class="icon-expand"></span>
+                    </div>
+                
+                	<h3>Responsive</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed dore eiusmod tempor incididunt ut labore etman dolore magna aliqua nimad minim veniam pulsar adiya</p>
+                </div>
+            </div>
+        </div>
+    <div class="tp-leftarrow tparrows default hidearrows"></div>
+    <div class="tp-rightarrow tparrows default hidearrows"></div>
+</section>
+    <!-- slideshow end here -->
+    
+    <!-- content section start here -->
+    <section id="content-wrapper">
+    	<div class="row service-column">
+        	<div class="twelve columns">
+            	<div class="special-title">
+            		<h3><span>Featured Project</span></h3>
+                </div>
+            </div>
+            
+            <div class="three columns mobile-two">
+            	<span class="link-more">
+                    <a href="#"><img src="{{STATIC_URL}}images/content/front-img1.jpg" alt="" class="fade" style="opacity: 1;"></a>
+                </span>
+            
+            	<h5>Clean &amp; Minimalist</h5>
+                <p>Sed eiusmod tempor incididunt ut</p>
+            </div>
+            
+            <div class="three columns mobile-two">
+            	<span class="link-url">
+                    <a href="#"><img src="{{STATIC_URL}}images/content/front-img2.jpg" alt="" class="fade" style="opacity: 1;"></a>
+                </span>
+            
+            	<h5>Fully Responsive</h5>
+                <p>Sed eiusmod tempor incididunt ut</p>
+            </div>
+            
+            <div class="three columns mobile-two">
+            	<span class="link-zoom">
+                    <a href="#"><img src="{{STATIC_URL}}images/content/front-img3.jpg" alt="" class="fade" style="opacity: 1;"></a>
+                </span>
+            
+            	<h5>Easy to Customize</h5>
+                <p>Sed eiusmod tempor incididunt ut</p>
+            </div>
+            
+            <div class="three columns mobile-two">
+            	<span class="link-video">
+                    <a href="#"><img src="{{STATIC_URL}}images/content/front-img4.jpg" alt="" class="fade" style="opacity: 1;"></a>
+                </span>
+            
+            	<h5>Great HTML Template</h5>
+                <p>Sed eiusmod tempor incididunt ut</p>
+            </div>
+            
+        	<div class="four columns">
+            	<img src="{{STATIC_URL}}images/content/front-img5.png" alt="" class="img-media">
+            </div>
+            <div class="eight columns">
+            	<h1>We work with passion and knowledge.</h1>
+            	<p class="big-text">Excepteur sint occaecat cupidatat non proident, suntin culpa qui officia deserunt mollit anim id est laborum sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                
+                <div class="row">
+                    <div class="six columns">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatu deleniti atque corrupti quos dolores et quas molestias excep turi sint occaecati cupiditate non provident similique</p>
+                        <a href="#" class="button medium green">Details »</a>
+                    </div>
+                    <div class="six columns">
+                        <span class="progress-title">Experience</span><span class="progress-meter">90%</span>
+                        <div id="experience-bar" class="ui-progress-bar ui-container">
+                            <div class="ui-progress" style="width: 90%; overflow: hidden;"></div>
+                        </div>
+                        <span class="progress-title">Strategy</span><span class="progress-meter">80%</span>
+                        <div id="strategy-bar" class="ui-progress-bar ui-container">
+                            <div class="ui-progress" style="width: 80%; overflow: hidden;"></div>
+                        </div>
+                
+                        <span class="progress-title">Ability</span><span class="progress-meter">95%</span>
+                        <div id="ability-bar" class="ui-progress-bar ui-container">
+                            <div class="ui-progress" style="width: 95%; overflow: hidden;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        	<div class="twelve columns">
+            	<div class="special-title">
+            		<h3><span>Our Partners</span></h3>
+                </div>
+                
+                <ul class="client-box">
+                    <li><img src="{{STATIC_URL}}images/content/client1.png" alt="" class="retina"></li>
+                    <li><img src="{{STATIC_URL}}images/content/client2.png" alt="" class="retina"></li>
+                    <li><img src="{{STATIC_URL}}images/content/client3.png" alt="" class="retina"></li>
+                    <li><img src="{{STATIC_URL}}images/content/client4.png" alt="" class="retina"></li>
+                    <li><img src="{{STATIC_URL}}images/content/client5.png" alt="" class="retina"></li>
+                    <li><img src="{{STATIC_URL}}images/content/client6.png" alt="" class="retina"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- content section end here -->
+    
+    <footer>    
+    	<div id="bottom-wrapper">
+        	<div class="row">
+            	<div class="twelve columns">
+                </div>
+            </div>
+        </div>
+        
+    	<div class="row">
+        	<div class="four columns">
+            	<h5 class="title-line"><span>Cygnus Corporation.</span></h5>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam convallis euismod mollis egestas non imperdiet.</p>
+                <ul class="contact-list">
+                    <li class="address-icon">25 Silver Cost Avenue, MD 20910 Indonesia</li>
+                    <li class="phone-icon">(621) 555 6789</li>
+                    <li class="email-icon">hello@cygnus.net</li>
+                </ul>
+            </div>
+            
+            <div class="four columns">
+            	<h5 class="title-line"><span>Flickr Photos.</span></h5>
+            	<ul id="flck-thumb" class="thumbs">
+                    <li class="no-image"></li>
+                    <div>
+                        <a class="fancybox" href="http://farm4.staticflickr.com/3165/13090561633_e9c5d3c072.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Jess &amp; Terry"><img src="{{STATIC_URL}}images/content/13090561633_e9c5d3c072_s.jpg" alt="Around the Envato Office - Jess &amp; Terry"></a>
+                    </div>
+                    <div>
+                        <a class="fancybox" href="http://farm3.staticflickr.com/2697/13090570003_021f405fbf.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Briany &amp; Carmen in deep conversation"><img src="{{STATIC_URL}}images/content/13090570003_021f405fbf_s.jpg" alt="Around the Envato Office - Briany &amp; Carmen in deep conversation"></a>
+                    </div>
+                    <div>
+                        <a class="fancybox" href="http://farm4.staticflickr.com/3596/13090762874_5f9d99f4e5.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Ben &amp; Jane"><img src="{{STATIC_URL}}images/content/13090762874_5f9d99f4e5_s.jpg" alt="Around the Envato Office - Ben &amp; Jane"></a>
+                    </div>
+                    <div>
+                        <a class="fancybox" href="http://farm3.staticflickr.com/2279/13090422515_cabc9c447c.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Becca"><img src="{{STATIC_URL}}images/content/13090422515_cabc9c447c_s.jpg" alt="Around the Envato Office - Becca"></a>
+                    </div>
+                    <div>
+                        <a class="fancybox" href="http://farm4.staticflickr.com/3715/13090456565_df81e68627.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Selina"><img src="{{STATIC_URL}}images/content/13090456565_df81e68627_s.jpg" alt="Around the Envato Office - Selina"></a>
+                    </div>
+                    <div><a class="fancybox" href="http://farm8.staticflickr.com/7325/13090549273_ee5c732ce1.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Highfive!"><img src="{{STATIC_URL}}images/content/13090549273_ee5c732ce1_s.jpg" alt="Around the Envato Office - Highfive!"></a>
+                    </div>
+                    <div>
+                        <a class="fancybox" href="http://farm4.staticflickr.com/3419/13090409365_5d3172a7dc.jpg" data-fancybox-group="gallery" title="Around the Envato Office - Amber in a HR Meeting">
+                            <img src="{{STATIC_URL}}images/content/13090409365_5d3172a7dc_s.jpg" alt="Around the Envato Office - Amber in a HR Meeting">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="fancybox" href="http://farm8.staticflickr.com/7302/12333892565_fa980bc87f.jpg" data-fancybox-group="gallery" title="Melbourne Meetup">
+                            <img src="{{STATIC_URL}}images/content/12333892565_fa980bc87f_s.jpg" alt="Melbourne Meetup">
+                        </a>
+                    </div>
+                </ul>
+            
+                <!-- Noscript Notification when your Javascript not active -->
+                <div id="flickr-noscript">                	
+                    <p>Can't load Flickr feed, please activate your javascript first...</p>
+                </div>
+                <!-- End of Noscript Notification when your Javascript not active -->
+            </div>
+            
+            <div class="four columns">
+            	<h5 class="title-line"><span>Tag Clouds.</span></h5>
+            	<div class="tag-cloud">                        
+                    <a href="#">Indonesia</a>
+                    <a href="#">jQuery</a>
+                    <a href="#">Design</a>
+                    <a href="#">Responsive</a>
+                    <a href="#">Themeforest</a>
+                    <a href="#">Clean</a>
+                    <a href="#">Minimalist</a>
+                    <a href="#">Modern</a>
+                    <a href="#">CSS 3</a>
+                    <a href="#">Layer Slider</a>
+                    <a href="#">Corporate</a>
+                    <a href="#">HTML 5</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+        	<div class="twelve columns"> 
+           		<div class="copyright-area">
+                    <div class="copyright-text">
+                        © Copyright 2013 by Indonez. All Rights Reserved.
+                    </div> 
+                    <ul class="socials-list-bottom">
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/facebook(1).png" alt="" class="retina"></a></li>
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/twitter(1).png" alt="" class="retina"></a></li>                            
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/google+(1).png" alt="" class="retina"></a></li>
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/dribbble(1).png" alt="" class="retina"></a></li>
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/vimeo(1).png" alt="" class="retina"></a></li>
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/linkedin(1).png" alt="" class="retina"></a></li>
+                        <li><a href="#"><img src="{{STATIC_URL}}images/content/rss(1).png" alt="" class="retina"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+<script>$('#noscript').remove();</script>
+
+<a href="#" id="toTop">
+    <span id="toTopHover"></span>To Top
+</a>
+    <embed type="application/x-unity-webapps-npapi" id="unityChromiumExtensionId" height="0" width="0" style="display: block !important;">
+</body>
+</html>

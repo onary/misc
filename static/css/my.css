@@ -1,0 +1,6 @@
+.tp-leftarrow, .tp-rightarrow {
+	margin-top: -166px;
+}
+.icon-curlybrace-2:before {
+	content: "\e067";
+}
