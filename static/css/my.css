@@ -1,6 +1,85 @@
+header #top-info {
+	background: #94ba65;
+	color: #fff;
+	-webkit-box-shadow: inset 0px -4px 5px rgba(89, 146, 16, 0.6);
+	-moz-box-shadow: inset 0px -4px 5px rgba(89, 146, 16, 0.6);
+	box-shadow: inset 0px -4px 5px rgba(89, 146, 16, 0.6);
+}
+
+#mainmenu-wrapper #logo {
+	position: absolute;
+	z-index: 13;
+	margin: 0;
+}
+
+#mainmenu-wrapper #logo a img {
+	width: auto;
+	height: auto;
+}
+
 .tp-leftarrow, .tp-rightarrow {
 	margin-top: -166px;
 }
-.icon-curlybrace-2:before {
-	content: "\e067";
+
+.circle-icon {
+	padding: 15px;
+}
+
+.icon-paragraph,
+.icon-image-insta,
+.icon-book-insta,
+.icon-navigation-insta,
+.icon-file-insta,
+.icon-paper-insta {
+	margin-left: -2px;
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+
+.icon-paragraph {
+	background: #FFF url(../images/instascribe/paragraph.png);
+	background-size: cover;
+	margin-left: -4px;
+}
+
+.icon-image-insta {
+	background: #FFF url(../images/instascribe/image.png);
+	background-size: cover;
+}
+
+.icon-book-insta {
+	background: #FFF url(../images/instascribe/book.png);
+	background-size: cover;
+}
+
+.icon-navigation-insta {
+	background: #FFF url(../images/instascribe/navigation.png);
+	background-size: cover;
+}
+
+.icon-file-insta {
+	background: #FFF url(../images/instascribe/file.png);
+	background-size: cover;
+}
+
+.icon-paper-insta {
+	background: #FFF url(../images/instascribe/paper.png);
+	background-size: cover;
+}
+
+#slideshow-content .row {
+	margin: 0 auto 0px auto;
+}
+
+#slideshow-content {
+	padding: 10px 0px 4px 0px;
+}
+
+#slideshow-content .row .four h3, #slideshow-content .row .four p {
+	margin: 0;
+}
+
+#menu .dropdown:hover ul {
+	display: block;
 }
