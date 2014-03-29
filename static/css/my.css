@@ -83,3 +83,16 @@ header #top-info {
 #menu .dropdown:hover ul {
 	display: block;
 }
+
+#toTop {
+	display: inline; 
+	opacity: 0.5;
+}
+
+#toTop:hover {
+	opacity: 1;
+}
+
+footer ul.contact-list {
+	margin-top: 0;
+}
