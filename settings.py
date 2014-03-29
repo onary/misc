@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'apps.boroda',
+    'apps.main',
+    'apps.instascribe',
 )
 
 MIDDLEWARE_CLASSES = (

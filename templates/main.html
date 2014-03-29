@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Misc for test</title>
+
+    <!-- <link rel="stylesheet" href="http://themedemo.indonez.com/Cygnus/css/base.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/base.css">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/framework.css">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/media.css">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/revolution-media.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/revolution.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/instascribe.css">
+
+    <link rel="icon" type="image/png" href="http://www.oftaldent.pl/gfx/slider/images/sitelogo.png">
+
+    <!-- commented, remove this line to use IE & iOS favicons -->
+    <link rel="shortcut icon" href="http://www.oftaldent.pl/gfx/slider/images/favicon.ico">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui.js"></script>
+
+     <!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- base script -->
+    <script type="text/javascript" src="{{STATIC_URL}}js/base.js"></script>
+    {% block head_extra %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    <div class="row">
+        <div class="twelve columns">
+        </div>
+
+        <div class="twelve columns">
+            <div class="special-title">
+                <h3><span>My recent works:</span></h3>
+            </div>
+        </div>
+
+        <div class="four columns">
+            <div class="panel text-overflow">
+                <img src="{{STATIC_URL}}images/sample_images/front-img1a.png" alt="" class="img-left-nomargin">
+                <h3>Instascribe</h3>
+                <p>Front-end work: templatizing all the page available in the theme into Django templates</p>
+                
+                <a class="button small green" href="{% url 'instascribe' %}">More Info</a>
+            </div>
+        </div>
+        
+        <div class="four columns">
+            <div class="panel text-overflow">
+                <img src="{{STATIC_URL}}images/sample_images/front-img3a.png" alt="" class="img-left-nomargin">
+                <h3>Pay Pal</h3>
+                <p>Integration Pay Pal Pro into Django-app. Coming soon</p>
+                
+                <a class="button small green" href="">More Info</a>
+            </div>
+        </div>
+
+        <div class="four columns">
+            <div class="panel text-overflow">
+                <img src="{{STATIC_URL}}images/sample_images/front-img2a.png" alt="" class="img-left-nomargin">
+                <h3>Compatible</h3>
+                <p>Coming soon</p>
+                
+                <a class="button small green" href="">More Info</a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
