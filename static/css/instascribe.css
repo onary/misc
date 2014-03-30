@@ -104,3 +104,18 @@ footer ul.contact-list {
 .four .panel > p{
 	min-height: 100px;
 }
+
+.row a.home-link span {
+	display: block;
+	background-image: url(../images/icon-home.gif);
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	margin-right: 5px;
+	float: left;
+}
+
+#paypal-form label {
+	display: block;
+	width: 100%;
+}

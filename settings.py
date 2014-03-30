@@ -38,8 +38,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'paypal.standard',
+    'paypal.pro',
+
     'apps.main',
     'apps.instascribe',
+    'apps.paypalpro',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -109,3 +113,16 @@ STATICFILES_DIRS = (
 
 
 STATIC_URL = '/static/'
+
+if IS_LOCAL_ENV:
+    SITE_URL = 'http://127.0.0.1:8000'
+else:
+    SITE_URL = 'http://misc-for-test.herokuapp.com'
+
+PAYPAL_TEST = True
+PAYPAL_WPP_USER = "business.abraham_api1.gmail.com"
+PAYPAL_WPP_PASSWORD = "1396126173"
+PAYPAL_WPP_SIGNATURE = "AREmlapucenpmUBDAYOvRlPJS5DkA3OWPtFHRm.aFI2kqYhbNlAoxcko"
+
+PAYPAL_RECEIVER_EMAIL = ""
+PAYPAL_IDENTITY_TOKEN = ""

@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block body %}
+<div class="row">
+    <div class="twelve columns"><a class="home-link" href="{% url 'main' %}"><span></span> Home</a></div>
+</div>
+<div class="row">
+    <div class="six columns">
+    <h1>Show me the money</h1>
+    <form method="post" action="" id="paypal-form">
+        {% csrf_token %}
+        {{ form }}
+        <!-- <input type="submit" value="Pay Up"> -->
+        <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" name="express" value="Paypal express" class="paypal-banner" />
+    </form>
+    </div>
+</div>
+{% endblock %}
