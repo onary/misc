@@ -8,8 +8,6 @@ urlpatterns = patterns('',
     url(r'^instascribe/$', 'apps.instascribe.views.instascribe', name='instascribe'),
     
     (r'^paypalpro/', include('apps.paypalpro.urls')),
-    (r'^paypalpro/ipn/', include('paypal.standard.ipn.urls')),
-    (r'^paypalpro/pdt/', include('paypal.standard.pdt.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
 )

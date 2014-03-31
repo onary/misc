@@ -9,7 +9,7 @@ def buy_item(request):
         "inv": "inventory",                 # unique tracking variable paypal
         "custom": "tracking",               # custom tracking variable for you
         "cancelurl": settings.SITE_URL,     # Express checkout cancel url
-        "returnurl": reverse('buy_item')   # Express checkout return url
+        "returnurl": reverse('buy_item')    # Express checkout return url
         }
 
     kw = {"item": item,                          # what you're selling
