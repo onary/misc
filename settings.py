@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'apps.main',
     'apps.instascribe',
     'apps.paypalpro',
+    "apps.middleware",
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,6 +54,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'apps.middleware.ssl.SSLRedirect',
 )
 
 ROOT_URLCONF = 'urls'
@@ -116,8 +119,10 @@ STATIC_URL = '/static/'
 
 if IS_LOCAL_ENV:
     SITE_URL = 'http://127.0.0.1:8000'
+    ENABLE_SSL = False
 else:
     SITE_URL = 'http://misc-for-test.herokuapp.com'
+    ENABLE_SSL = True
 
 PAYPAL_TEST = True
 PAYPAL_WPP_USER = "business.abraham_api1.gmail.com"
